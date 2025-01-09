@@ -1,0 +1,17 @@
+INSERT INTO product (id, type, name, price) VALUES
+(67890, 'Home Appliance', 'Microwave', 89.99),
+(98765, 'Electronics', 'Tablet', 299.99),
+(13579, 'Electronics', 'Smartwatch', 199.99),
+(24680, 'Home Appliance', 'Washing Machine', 499.99),
+(10101, 'Electronics', 'Television', 999.99),
+(11223, 'Home Appliance', 'Stove', 399.99),
+(33445, 'Electronics', 'Headphones', 49.99),
+(55667, 'Electronics', 'Earbuds', 29.99),
+(77889, 'Home Appliance', 'Blender', 19.99),
+(99000, 'Electronics', 'Camera', 2399.99),
+(11222, 'Electronics', 'Printer', 199.99),
+(33444, 'Home Appliance', 'Flat Iron', 29.99),
+(55666, 'Electronics', 'Router', 99.99),
+(77888, 'Electronics', 'Modem', 49.99),
+(99001, 'Home Appliance', 'Radio', 19.99),
+(11224, 'Electronics', 'Air Purifier', 399.99);
