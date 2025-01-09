@@ -32,13 +32,13 @@ public class ProductController {
 		return new ResponseEntity<>(product, HttpStatus.OK);
 	}
 
-	@GetMapping("/{id}")
+	@GetMapping("/get/{id}")
 	public ResponseEntity<Product> getProductById(@PathVariable Long id) {
 		Product product = productService.getProduct(id);
 		return new ResponseEntity<>(product, HttpStatus.OK);
 	}
 
-	@GetMapping("/{getTypes}")
+	@GetMapping("/getTypes")
 	public ResponseEntity<List<String>> getProductTypes() {
 		List<String> product = productService.getProductTypes();
 		return new ResponseEntity<>(product, HttpStatus.OK);
@@ -51,7 +51,7 @@ public class ProductController {
 		return response;
 	}
 
-	@DeleteMapping("/{id}")
+	@DeleteMapping("/delete/{id}")
 	public ResponseEntity<Void> deleteCustomer(@PathVariable Long id) {
 		productService.deleteProduct(id);
 		ResponseEntity<Void> response = ResponseEntity.noContent().build();
