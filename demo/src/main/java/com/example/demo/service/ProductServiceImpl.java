@@ -37,8 +37,14 @@ public class ProductServiceImpl implements ProductService {
 
 	@Override
 	public Product createProduct(Product product) {
-		Product savedProduct = productRepository.save(product);
-		return savedProduct;
+		boolean isNameExists = productRepository.existsByName(product.getName());
+		if(!isNameExists) {
+			Product savedProduct = productRepository.save(product);
+			return savedProduct;
+		}else {
+			return null;
+		}
+
 	}
 
 	@Override

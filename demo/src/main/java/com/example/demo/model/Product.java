@@ -1,5 +1,6 @@
 package com.example.demo.model;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -11,11 +12,12 @@ public class Product {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
+
 	private String type;
-	
+
+	@Column(unique = true)
 	private String name;
-	
+
 	private double price;
 
 	public Long getId() {
@@ -49,7 +51,5 @@ public class Product {
 	public void setPrice(double price) {
 		this.price = price;
 	}
-	
-	
 
 }
